@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ever Quint — Water Tank Problem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="brand-row">
+      <div class="brand">Ever Quint<span>®</span></div>
+      <div class="assignment">Interview Assignment</div>
+    </header>
+
+    <section class="card">
+      <h1>Water Tank Problem</h1>
+      <p class="description">
+        Given an array, where the value at each index represents the block height,
+        calculate the units of water stored between the blocks. Use Vanilla JavaScript
+        to represent the solution and visualize it with a table or SVG.
+      </p>
+
+      <div class="controls">
+        <label for="heightInput">Block heights</label>
+        <div class="input-row">
+          <input id="heightInput" value="0,4,0,0,0,6,0,6,4,0" aria-label="Block heights">
+          <button id="calculateButton" type="button">Calculate</button>
+        </div>
+      </div>
+
+      <h2>Example</h2>
+      <p class="example">Input: <code id="exampleInput">[0,4,0,0,0,6,0,6,4,0]</code></p>
+      <div id="tankView" class="tank-view" aria-label="Water tank visualization"></div>
+
+      <p class="result" id="result">Output: <strong>18 Units</strong></p>
+      <div id="waterView" class="tank-view water-view" aria-label="Trapped water visualization"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
