@@ -35,7 +35,7 @@ function maxProfit(n) {
             const completionTime = t + building.time;
 
             // Check construction time limit
-            if (completionTime > n) {
+            if (completionTime >= n) {
                 continue;
             }
 
